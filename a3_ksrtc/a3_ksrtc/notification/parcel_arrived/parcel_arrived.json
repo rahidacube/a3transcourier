@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "SMS",
+ "condition": "doc.status==\"Arrived Destination\"",
+ "creation": "2023-05-23 18:38:44.399515",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Consignment Booking",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Hello {{doc.full_name}}, Your package with tracking number {{doc.name}} has successfully arrived at its destination. Thank you, KSRTC Logistics.",
+ "modified": "2023-06-23 16:35:29.012415",
+ "modified_by": "Administrator",
+ "module": "A3 Ksrtc",
+ "name": "Parcel Arrived",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "mobile_number"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Parcel Arrived at Destination",
+ "value_changed": "status"
+}

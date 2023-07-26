@@ -1,0 +1,1 @@
+Your package with tracking number {{doc.name}} has been dispatched from {{doc.pickup_station}}. Thank you

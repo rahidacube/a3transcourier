@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-16 17:56:25.164735",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "consignment",
+  "customer_name",
+  "customer_phone_number",
+  "receiver_name",
+  "receiver_phone_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "consignment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Consignment ",
+   "options": "Consignment Booking"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "customer_phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Customer Phone Number"
+  },
+  {
+   "fieldname": "receiver_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Receiver Name"
+  },
+  {
+   "fieldname": "receiver_phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Receiver Phone Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-16 17:57:24.540706",
+ "modified_by": "Administrator",
+ "module": "A3 Ksrtc",
+ "name": "Consignment Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

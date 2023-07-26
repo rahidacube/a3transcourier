@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "SMS",
+ "condition": "doc.status==\"Delivered\"",
+ "creation": "2023-05-23 18:43:27.476696",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Consignment Booking",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Hello {{doc.full_name}}, your package {{doc.name}} has been successfully delivered. Thank you, KSRTC Logistics.\n",
+ "modified": "2023-06-23 16:41:40.397418",
+ "modified_by": "Administrator",
+ "module": "A3 Ksrtc",
+ "name": "Parcel Delivered",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "mobile_number"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Delivery Confirmation - Your Parcel Has Been Delivered",
+ "value_changed": "status"
+}

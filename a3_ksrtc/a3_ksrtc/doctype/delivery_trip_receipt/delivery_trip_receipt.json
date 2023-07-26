@@ -1,0 +1,334 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:DTR-{full_name}-{###}",
+ "creation": "2023-05-03 15:08:08.845891",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "consignment_details",
+  "consignment_number",
+  "senders_information_section",
+  "full_name",
+  "customer_group",
+  "territory",
+  "id_proof",
+  "id_number",
+  "column_break_cdkr6",
+  "mobile_number",
+  "address_title",
+  "street_address",
+  "city",
+  "recipients_information_section",
+  "name1",
+  "phone_number",
+  "column_break_dni4o",
+  "addresss",
+  "shipment_details_section",
+  "shipment_details",
+  "delivery_details_section",
+  "delivery_time",
+  "column_break_xqihb",
+  "delivery_date",
+  "dropoff_station",
+  "delivery_address",
+  "payment_details_section",
+  "weight",
+  "cost",
+  "column_break_8gez2",
+  "payment_method",
+  "payment_status",
+  "particularsif_any",
+  "vehicle_details_section",
+  "vehicle_number",
+  "rt_number",
+  "driver",
+  "phone",
+  "column_break_6cq8j",
+  "destination_station",
+  "destination_station_in_charge",
+  "conductor_name",
+  "phone1",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "senders_information_section",
+   "fieldtype": "Section Break",
+   "label": "Sender's Information"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "id_proof",
+   "fieldtype": "Attach",
+   "label": "ID Proof"
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "ID Number"
+  },
+  {
+   "fieldname": "column_break_cdkr6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "address_title",
+   "fieldtype": "Data",
+   "label": "Address Title"
+  },
+  {
+   "fieldname": "street_address",
+   "fieldtype": "Data",
+   "label": "Street Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "recipients_information_section",
+   "fieldtype": "Section Break",
+   "label": "Recipient's Information"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "column_break_dni4o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "addresss",
+   "fieldtype": "Small Text",
+   "label": "Addresss"
+  },
+  {
+   "fieldname": "shipment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Shipment Details"
+  },
+  {
+   "fieldname": "shipment_details",
+   "fieldtype": "Table",
+   "label": "Shipment Details",
+   "options": "Shipment Details"
+  },
+  {
+   "fieldname": "delivery_details_section",
+   "fieldtype": "Section Break",
+   "label": "Delivery Details"
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "delivery_time",
+   "fieldtype": "Time",
+   "label": "Delivery Time"
+  },
+  {
+   "fieldname": "dropoff_station",
+   "fieldtype": "Link",
+   "label": "Destination Station",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_xqihb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "delivery_address",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Delivery Address"
+  },
+  {
+   "fieldname": "payment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "column_break_8gez2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Select",
+   "label": "Payment method",
+   "options": "Cash\nCredit Card\nDebit Card\nOnline Payment"
+  },
+  {
+   "fieldname": "particularsif_any",
+   "fieldtype": "Small Text",
+   "label": "Particulars(If any)"
+  },
+  {
+   "fieldname": "vehicle_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Details"
+  },
+  {
+   "fieldname": "vehicle_number",
+   "fieldtype": "Link",
+   "label": "Vehicle Number",
+   "options": "Vehicle"
+  },
+  {
+   "fieldname": "rt_number",
+   "fieldtype": "Data",
+   "label": "RT Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Driver's Phone Number"
+  },
+  {
+   "fieldname": "column_break_6cq8j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "destination_station",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Destination Station",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "destination_station_in_charge",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Destination Station In charge",
+   "options": "User"
+  },
+  {
+   "fieldname": "phone1",
+   "fieldtype": "Data",
+   "label": "Condutor Phone Number"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Delivery Trip Receipt",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "consignment_details",
+   "fieldtype": "Barcode",
+   "hidden": 1,
+   "label": "Consignment Details"
+  },
+  {
+   "fieldname": "consignment_number",
+   "fieldtype": "Link",
+   "label": "Consignment Number",
+   "options": "LOT Number"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "\nPaid\nUnpaid\nPartially Paid"
+  },
+  {
+   "fieldname": "conductor_name",
+   "fieldtype": "Link",
+   "label": "Conductor Name",
+   "options": "Conductor"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-09 11:32:39.675290",
+ "modified_by": "Administrator",
+ "module": "A3 Ksrtc",
+ "name": "Delivery Trip Receipt",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Station Operator",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

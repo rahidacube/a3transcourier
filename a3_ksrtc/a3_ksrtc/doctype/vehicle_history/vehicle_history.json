@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-13 17:14:24.361740",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle",
+  "driver",
+  "conductor",
+  "pick_up_station",
+  "drop_off_station"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Vehicle ",
+   "options": "Vehicle"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Driver",
+   "options": "Driver"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "conductor",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Conductor",
+   "options": "Conductor"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "pick_up_station",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Pick up Station",
+   "options": "Warehouse"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "drop_off_station",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Drop off Station",
+   "options": "Warehouse"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-13 20:10:57.748972",
+ "modified_by": "Administrator",
+ "module": "A3 Ksrtc",
+ "name": "Vehicle History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

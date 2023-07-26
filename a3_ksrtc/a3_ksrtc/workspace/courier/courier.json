@@ -1,0 +1,255 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2023-05-11 15:48:23.956292",
+ "developer_mode_only": 0,
+ "disable_user_customization": 1,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Courier",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Send Consignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Consignments",
+   "link_to": "Consignment Booking",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Invoices",
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payments",
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lot Generation",
+   "link_to": "LOT Number",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Trip List",
+   "link_to": "Vehicle Assignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Receive Consignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Arrived Trip List",
+   "link_to": "Vehicle Assignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Received Consignments",
+   "link_to": "Delivery Trip Receipt",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Received Lots",
+   "link_to": "LOT Number",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Delivered Consignments",
+   "link_to": "Consignment Booking",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Consignments Arriving",
+   "link_to": "Consignment Booking",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Consignment Masters",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Driver",
+   "link_to": "Driver",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Conductor",
+   "link_to": "Conductor",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle",
+   "link_to": "Vehicle",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Station List",
+   "link_to": "Warehouse",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Type of Shipment",
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  }
+ ],
+ "modified": "2023-06-28 16:48:43.174731",
+ "modified_by": "Administrator",
+ "module": "A3 Ksrtc",
+ "name": "Courier",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "New",
+   "label": "New Booking",
+   "link_to": "Consignment Booking",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "New",
+   "label": "New LOT",
+   "link_to": "LOT Number",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "New",
+   "label": "New Vehicle Assignment",
+   "link_to": "Vehicle Assignment",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Vehicle Arrivals",
+   "link_to": "Vehicle Assignment",
+   "stats_filter": "{\n    \"vstatus\":[\"like\",\"On Transit\"]\n}",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "New",
+   "label": "New Delivery Receipt",
+   "link_to": "Delivery Trip Receipt",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Received Consignments",
+   "link_to": "Consignment Booking",
+   "stats_filter": "{\n    \"cstatus\":[\"like\",\"Arrived Destination\"]\n}",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Make Delivery",
+   "link_to": "Consignment Booking",
+   "stats_filter": "{\n    \"cstatus\":[\"like\",\"Arrived Destination\"]\n}",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Consignments Delivered",
+   "link_to": "Consignment Booking",
+   "stats_filter": "{\n    \"cstatus\":[\"like\",\"Delivered\"]\n}",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "COURIER SERVICE SYSTEM"
+}

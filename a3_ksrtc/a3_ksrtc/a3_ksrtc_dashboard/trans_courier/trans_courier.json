@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Total Consignment",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-05-23 15:15:00.277436",
+ "dashboard_name": "TRANS COURIER",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-05-23 15:15:00.277436",
+ "modified_by": "Administrator",
+ "module": "A3 Ksrtc",
+ "name": "TRANS COURIER",
+ "owner": "Administrator"
+}

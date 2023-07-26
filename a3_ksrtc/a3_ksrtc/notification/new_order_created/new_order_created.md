@@ -1,0 +1,1 @@
+KSRTC Logistics: Your consignment:{{ doc.name }} is booked successfully. For more info: https://tinyurl.com/ycp7fpf5

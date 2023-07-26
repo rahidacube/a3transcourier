@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include a3_ksrtc *.css
+recursive-include a3_ksrtc *.csv
+recursive-include a3_ksrtc *.html
+recursive-include a3_ksrtc *.ico
+recursive-include a3_ksrtc *.js
+recursive-include a3_ksrtc *.json
+recursive-include a3_ksrtc *.md
+recursive-include a3_ksrtc *.png
+recursive-include a3_ksrtc *.py
+recursive-include a3_ksrtc *.svg
+recursive-include a3_ksrtc *.txt
+recursive-exclude a3_ksrtc *.pyc

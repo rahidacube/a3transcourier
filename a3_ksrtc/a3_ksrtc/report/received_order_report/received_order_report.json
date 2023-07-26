@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-05-05 16:22:06.507602",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Delivery Trip Receipt\"],[\"docstatus\",\"Delivery Trip Receipt\"],[\"consignment_number\",\"Delivery Trip Receipt\"],[\"full_name\",\"Delivery Trip Receipt\"],[\"pickup_station\",\"Delivery Trip Receipt\"],[\"dropoff_station\",\"Delivery Trip Receipt\"],[\"driver\",\"Delivery Trip Receipt\"],[\"name1\",\"Delivery Trip Receipt\"]],\"order_by\":\"`tabDelivery Trip Receipt`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"docstatus\":120,\"consignment_number\":120,\"full_name\":120,\"pickup_station\":120,\"dropoff_station\":120,\"driver\":120,\"name1\":120},\"group_by\":null}",
+ "modified": "2023-05-18 10:46:21.699836",
+ "modified_by": "Administrator",
+ "module": "A3 Ksrtc",
+ "name": "Received Order Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Delivery Trip Receipt",
+ "report_name": "Received Order Report",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

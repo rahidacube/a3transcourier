@@ -1,0 +1,27 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2023-05-17 18:02:01.381223",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Consignment Booking",
+ "enabled": 0,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": " Dear {{ doc.full_name }}, a new booking with ID {{ doc.name }} has been created. You can track your consignment here:\n https://transcourierservice.frappe.cloud",
+ "modified": "2023-05-24 11:20:53.380369",
+ "modified_by": "Administrator",
+ "module": "A3 Ksrtc",
+ "name": "Consignment Created",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "New Booking-{{doc.name}} Created"
+}

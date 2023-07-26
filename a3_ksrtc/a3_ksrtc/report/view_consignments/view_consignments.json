@@ -1,0 +1,28 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-05-17 17:55:04.864353",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Consignment Booking\"],[\"full_name\",\"Consignment Booking\"],[\"vehicle_number\",\"Consignment Booking\"],[\"driver\",\"Consignment Booking\"],[\"lot_id\",\"Consignment Booking\"],[\"dropoff_station\",\"Consignment Booking\"],[\"delivery_time\",\"Consignment Booking\"],[\"pickup_station\",\"Consignment Booking\"],[\"delivery_date\",\"Consignment Booking\"],[\"cost\",\"Consignment Booking\"]],\"order_by\":\"`tabConsignment Booking`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"full_name\":120,\"vehicle_number\":120,\"driver\":120,\"lot_id\":120,\"dropoff_station\":120,\"delivery_time\":120,\"pickup_station\":120,\"delivery_date\":120,\"cost\":120},\"group_by\":null}",
+ "letter_head": "KSRTC",
+ "modified": "2023-05-18 10:45:43.890469",
+ "modified_by": "Administrator",
+ "module": "A3 Ksrtc",
+ "name": "View Consignments",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Consignment Booking",
+ "report_name": "View Consignments",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

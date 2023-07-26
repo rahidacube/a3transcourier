@@ -1,0 +1,1 @@
+Hello {{doc.full_name}}, Your package with tracking number {{doc.name}} has successfully arrived at its destination. Thank you, KSRTC Logistics.

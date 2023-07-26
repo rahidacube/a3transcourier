@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-10 18:48:22.760619",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "start_point",
+  "column_break_rq2wl",
+  "end_point",
+  "delivery_details_section",
+  "delivery_details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "start_point",
+   "fieldtype": "Link",
+   "label": "Start Point",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_rq2wl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_point",
+   "fieldtype": "Link",
+   "label": "End Point",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "delivery_details_section",
+   "fieldtype": "Section Break",
+   "label": "Delivery Details"
+  },
+  {
+   "fieldname": "delivery_details",
+   "fieldtype": "Table",
+   "label": "Delivery Details",
+   "options": "Order Transfer Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vehicle Assignment",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-09 11:31:59.627413",
+ "modified_by": "Administrator",
+ "module": "A3 Ksrtc",
+ "name": "Vehicle Assignment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Station Operator",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
