@@ -66,8 +66,9 @@ if(frappe.session.user!="Administrator"){
 					callback: (r) => {
 						console.log(r.message)
 						r.message.forEach((element)=>{
-							console.log(r.message)
-							clear_table("consignment_list")
+							console.log(element)
+							frm.clear_table("consignment_list")
+							
 
 						
 					
