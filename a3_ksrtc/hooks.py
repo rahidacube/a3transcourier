@@ -132,7 +132,7 @@ fixtures = [
   {"dt": "Custom DocPerm", "filters": [
             [
             "role", "in", [
-                    "Station Operator","Ksrtc Sub Admin"
+                    "Station Operator","Ksrtc Sub Admin",
                    
                     "Guest"
     		       ]
