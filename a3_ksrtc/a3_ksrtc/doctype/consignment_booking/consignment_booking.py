@@ -106,7 +106,7 @@ class ConsignmentBooking(Document):
 				y=dropoff.station_code1
 			self.location_code=x+"-"+y
 			if self.allow==0:
-				self.delivery_date=date.today()
+				self.delivery_date=frappe.utils.nowdate()
 				self.allow=1
 
 		
