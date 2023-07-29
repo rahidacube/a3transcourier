@@ -21,6 +21,8 @@ def after_insert(doc, method):
 		})
 		
 		contact.insert()
+		if contact.name:
+			doc.customer_primary_contact = contact.name
 	# if doc.mobile_number and doc.email:
 	# 	if not frappe.db.exists("User", {"first_name":doc.customer_name, "mobile_no":doc.mobile_number,"email":doc.email}):
 			

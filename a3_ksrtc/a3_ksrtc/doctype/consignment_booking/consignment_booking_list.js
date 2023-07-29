@@ -158,7 +158,6 @@ frappe.listview_settings['Consignment Booking'] = {
                           fieldname: 'bag_number',
                           fieldtype: 'Link',
                           options: 'Bag Number',
-                          reqd: 1,
                           get_query: () => {
                             return {
                               filters: {
@@ -186,6 +185,9 @@ frappe.listview_settings['Consignment Booking'] = {
                     ],
                     async (values) => {
                       console.log(values);
+                      if (!values.bag_number) {
+                        values.bag_number = "0";
+                      }
                       frappe.call({
                         method: "a3_ksrtc.a3_ksrtc.doctype.consignment_booking.consignment_booking.createlot",
                         args: {

@@ -605,6 +605,42 @@ def createlot(pickup_station,destination_station,bag_number,consignments,date1,v
 	# my_dict = dict(zip(keys, valuelist))
 
 	# print(my_dict)
+	if bag_number=="0":
+	# frappe.throw("Please Enter Bag Number")
+	# pass
+		for i in range(0,1000):
+			
+			random_number = random.randint(100,99999)
+			print(random_number,"random number")
+			
+			if not frappe.db.exists("Bag Number",{"number": random_number}):
+				bag = frappe.new_doc("Bag Number")
+				bag.number = random_number
+				# bag.insert(ignore_permissions=True)
+				bag.save(ignore_permissions=True)
+				print(f"Generated and saved Bag Number: {random_number}")
+				break
+		# 	print(random_number)
+		# print(bag,"gggggggggggggggggggggggggggggggggggggggggggg")
+		# frappe.throw("Please Enter Bag Number")
+	# def generate_unique_bag_number():
+
+	# 	random_number = random.randint(10000, 99999)
+	# 	if not frappe.db.exists("Bag Number", {"number": random_number}):
+	# 		bag = frappe.new_doc("Bag Number")
+	# 		bag.number = random_number
+	# 		bag.status="Vacant"
+	# 		bag.save(ignore_permissions=True)
+	# 		print(f"Generated and saved Bag Number: {random_number}")
+	# 		return random_number
+	# if bag_number == "0":
+	# 	unique_bag_number = generate_unique_bag_number()
+	# 	print(f"Unique Bag Number: {unique_bag_number}")
+	# 	# frappe.throw("bag number")
+	# else:
+	# 	# Handle other cases if needed
+	# 	pass
+		
 	print(consignments,"consignments")
 	lst = consignments.strip('[]').replace('"', '').split(',')
 
@@ -614,7 +650,7 @@ def createlot(pickup_station,destination_station,bag_number,consignments,date1,v
 	
 	lot.pickup_station=pickup_station
 	lot.end_station=destination_station
-	lot.bag_number=bag_number
+	lot.bag_number=bag.number
 	lot.posting_date=date1
 	for i in lst:
 		consin=frappe.get_doc("Consignment Booking",i)
@@ -645,7 +681,7 @@ def createlot(pickup_station,destination_station,bag_number,consignments,date1,v
 	driv_det=frappe.get_doc("Driver",driver)
 	veh_assign.driver_name=driv_det.full_name
 	veh_assign.driver_phone_number=driv_det.cell_number
-	veh_assign.append("delivery_details",{"bag_number":bag_number,"order_transfer_lot":lot.name,"pickup_station":lot.pickup_station,"destination_station":lot.end_station})
+	veh_assign.append("delivery_details",{"bag_number":bag.number,"order_transfer_lot":lot.name,"pickup_station":lot.pickup_station,"destination_station":lot.end_station})
 	veh_assign.save(ignore_permissions=True)
 	veh_assign.submit()
 	if on_Transit =="1":
@@ -791,4 +827,7 @@ def create_delivery_receipt(destination_station,bag_number,consignments,lot_numb
 		delivery_receipt.append("consignment_list",{"consignment":consin.name,"customer_name":consin.full_name,"customer_phone_number":consin.mobile_number,"receiver_name":consin.name1,"receiver_phone_number":consin.phone_number})
 	delivery_receipt.save(ignore_permissions=True)
 	delivery_receipt.submit()
+	# for i in delivery_receipt.delivery_details:
+	# 	veh_ass=frappe.get_doc()
+
 	frappe.msgprint('Delivery Receipt ' f'<a href="/app/delivery-trip-receipt/{delivery_receipt.name}" target="blank">{delivery_receipt.name} </a> Created Successfully ')
