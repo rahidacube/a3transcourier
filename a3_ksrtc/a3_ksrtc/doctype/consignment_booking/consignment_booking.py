@@ -660,6 +660,10 @@ def createlot(pickup_station,destination_station,bag_number,consignments,date1,v
 			if cust.customer_primary_address:
 				add=cust.customer_primary_address
 				lot.append("destinations",{"consignment_number":i,"customer":consin.full_name,"delivery_note":consin.consignment_id,"address":add})
+			else:
+				add="NIL-Billing"
+				lot.append("destinations",{"consignment_number":i,"customer":consin.full_name,"delivery_note":consin.consignment_id,"address":add})
+
 
 	lot.save(ignore_permissions=True)
 	lot.submit()
